@@ -13,5 +13,12 @@ declare(strict_types=1); ?>
   </head>
   <body>
       <Header>
-
+        <nav>
+        <ul id="nav">
+                        <li id="nav-home">Home</li>
+                        <li id="nav-blog">Blog</li>
+                        <li id="nav-about">About</li>
+                        <li id="nav-subscribe">Subscribe</li>
+                    </ul>
+        </nav>
       </Header>

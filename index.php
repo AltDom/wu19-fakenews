@@ -8,18 +8,23 @@ require __DIR__.'/data.php';
 require __DIR__.'/header.php'; ?>
 
 <?php foreach ($articles as $article) : ?>
-    <div class="wrapper">
-        <section>
-
-<div class="title"><?= $article['title']?></div> <!-- article title -->
-<div class="content"><?= nl2br($article['content']) ?></div> <!-- article contents with html line breaks when new line detected -->
-<div class="info">
-<div class="publisher"><?= $article['author'].' '.$article['published_date']?></div> <!-- date article published -->
-<div class="likes">Likes: <?= $article['like_counter']?></div> <!-- how many people like this article -->
-</div> <!-- article info -->
-</section> <!-- section -->
-</div> <!-- wrapper -->
-<hr>
+    <div class = "banner">
+        <section class='article-grid'>
+            <div class='img-grid'>
+            <img class='author-img' src="<?= $article['author_image']?>" alt="">
+            </div>
+            <div class='post-grid'>
+                <div class="title"><?= $article['title']?></div> <!-- article title -->
+                <div class="content"><?= nl2br($article['content']) ?></div> <!-- article contents with html line breaks when new line detected -->
+                <div class="article-details">
+                    <div class="publisher"><?= $article['author'].' | '.$article['published_date'].' | '?></div> <!-- date article published -->
+                    <div class="likes"><img src="like.png" width=25px height=25px alt=""> <?= $article['like_counter']?></div> <!-- how many people like this article -->
+                    <div class="dislikes"><img src="dislike.png" width=25px height=25px alt=""> <?= $article['dislike_counter']?></div>
+                </div> <!-- article details -->
+            </div>
+        </section> <!-- section for each article -->
+    </div> <!-- banner -->
+    <hr class = "heading-rule">
 <?php endforeach;
 
 require __DIR__.'/footer.php'; ?>

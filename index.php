@@ -17,9 +17,13 @@ require __DIR__.'/header.php'; ?>
                 <div class="title"><?= $article['title']?></div> <!-- article title -->
                 <div class="content"><?= nl2br($article['content']) ?></div> <!-- article contents with html line breaks when new line detected -->
                 <div class="article-details">
-                    <div class="publisher"><?= $article['author'].' | '.$article['published_date'].' | '?></div> <!-- date article published -->
-                    <div class="likes"><img src="like.png" width=25px height=25px alt=""> <?= $article['like_counter']?></div> <!-- how many people like this article -->
-                    <div class="dislikes"><img src="dislike.png" width=25px height=25px alt=""> <?= $article['dislike_counter']?></div>
+                    <div class="publisher"><?= $article['author'].' | '.$article['published_date']?></div> <!-- date article published -->
+                    <div class = 'counters'>
+                        <div class="likes"><img src="like.png" width=25px height=25px alt=""></div> <!-- how many people like this article -->
+                        <div class = "likes-counter"><?= $article['like_counter']?></div>
+                        <div class="dislikes"><img src="dislike.png" width=25px height=25px alt=""></div>
+                        <div class = "dislikes-counter"><?= $article['dislike_counter']?></div>
+                    </div>
                 </div> <!-- article details -->
             </div>
         </section> <!-- section for each article -->

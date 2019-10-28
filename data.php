@@ -126,7 +126,7 @@ $authors = [
 
 $titles = [
     '\'I\'ve come up with a new Ping Pong game! I\'m going to be very rich!\'',
-    '\'I ate a flugsvamp and I became invisible.',
+    '\'I ate a flugsvamp and I became invisible.\'',
     '\'I\'m a pretty big deal.\'',
     'The Matrix',
     'Transformers',
@@ -140,35 +140,94 @@ $titles = [
 $titles = shuffleArray($titles);
 
 $dates = [
-    '1 November 2019',
-    'The End of Time',
-    '300 BC',
-    '500 AD',
-    'In The Beginning',
-    '14 May 1987',
-    '25 December',
-    'The Dawn of Man',
-    'Snack-o-clock',
-    'Lunchtime',
-    'During an Awkward Silence',
-    '26 April 2014',
-    'Yesterday',
-    '17 June 2018',
-    '4 July 2019',
-    '12 January 2019',
-    '29 September 2019',
-    'Last Week',
-    '6 May 1990',
-    '29 February 2000',
+    [
+        'order' => 0,
+        'date' => '1 November 2019'
+    ],
+    [
+        'order' => 1,
+        'date' => 'The End of Time'
+    ],
+    [
+        'order' => 2,
+        'date' => 'Snack-o-Clock'
+    ],
+    [
+        'order' => 3,
+        'date' => 'Lunchtime'
+    ],
+    [
+        'order' => 4,
+        'date' => '12 January 2019'
+    ],
+    [
+        'order' => 5,
+        'date' => '14 May 1987'
+    ],
+    [
+        'order' => 6,
+        'date' => '25 December 2086'
+    ],
+    [
+        'order' => 7,
+        'date' => 'During an Awkward Silence'
+    ],
+    [
+        'order' => 8,
+        'date' => '17 June 2018'
+    ],
+    [
+        'order' => 9,
+        'date' => '4 July 2019'
+    ],
+    [
+        'order' => 10,
+        'date' => '26 April 2014'
+    ],
+    [
+        'order' => 11,
+        'date' => 'Yesterday'
+    ],
+    [
+        'order' => 12,
+        'date' => '500 AD'
+    ],
+    [
+        'order' => 13,
+        'date' => '300 BC'
+    ],
+    [
+        'order' => 14,
+        'date' => 'The Dawn of Man'
+    ],
+    [
+        'order' => 15,
+        'date' => 'In The Beginning'
+    ],
+    [
+        'order' => 16,
+        'date' => 'Last Week'
+    ],
+    [
+        'order' => 17,
+        'date' => '6 May 1990'
+    ],
+    [
+        'order' => 18,
+        'date' => '29 February 2000'
+    ]
 ];
-$dates = shuffleArray($dates);
+$shuffledDates = shuffleArray($dates);
+$datesSample = [$shuffledDates[0],$shuffledDates[1],$shuffledDates[2],$shuffledDates[3],$shuffledDates[4],$shuffledDates[5],$shuffledDates[6],$shuffledDates[7],$shuffledDates[8],$shuffledDates[9]];
+$datesOrders = orderArray($datesSample);
+
 
 $articles = [
     [
-        'title' => "$titles[0]",
+        'title' => $titles[0],
         'content' => file_get_contents(__DIR__.'/articles/article01.txt'),
         'author' => $authors[$ids[0]-1]['full_name'],
-        'published_date' => "$dates[0]",
+        'published_date' => $dates[ $datesOrders[0] ]['date'],
         'like_counter' => rand(0,1000),
         'dislike_counter' => rand(0,1000),
         'author_image' => '/profiles' . "/$ids[0]" . '.jpg'
@@ -177,7 +236,7 @@ $articles = [
         'title' => "$titles[1]",
         'content' => file_get_contents(__DIR__.'/articles/article02.txt'),
         'author' => $authors[$ids[1]-1]['full_name'],
-        'published_date' => "$dates[1]",
+        'published_date' => $dates[ $datesOrders[1] ]['date'],
         'like_counter' => rand(0,1000),
         'dislike_counter' => rand(0,1000),
         'author_image' => '/profiles' . "/$ids[1]" . '.jpg'
@@ -186,7 +245,7 @@ $articles = [
         'title' => "$titles[2]",
         'content' => file_get_contents(__DIR__.'/articles/article03.txt'),
         'author' => $authors[$ids[2]-1]['full_name'],
-        'published_date' => "$dates[2]",
+        'published_date' => $dates[ $datesOrders[2] ]['date'],
         'like_counter' => rand(0,1000),
         'dislike_counter' => rand(0,1000),
         'author_image' => '/profiles' . "/$ids[2]" . '.jpg'
@@ -195,7 +254,7 @@ $articles = [
         'title' => "$titles[3]",
         'content' => file_get_contents(__DIR__.'/articles/article04.txt'),
         'author' => $authors[$ids[3]-1]['full_name'],
-        'published_date' => "$dates[3]",
+        'published_date' => $dates[ $datesOrders[3] ]['date'],
         'like_counter' => rand(0,1000),
         'dislike_counter' => rand(0,1000),
         'author_image' => '/profiles' . "/$ids[3]" . '.jpg'
@@ -204,7 +263,7 @@ $articles = [
         'title' => "$titles[4]",
         'content' => file_get_contents(__DIR__.'/articles/article05.txt'),
         'author' => $authors[$ids[4]-1]['full_name'],
-        'published_date' => "$dates[4]",
+        'published_date' => $dates[ $datesOrders[4] ]['date'],
         'like_counter' => rand(0,1000),
         'dislike_counter' => rand(0,1000),
         'author_image' => '/profiles' . "/$ids[4]" . '.jpg'
@@ -213,7 +272,7 @@ $articles = [
         'title' => "$titles[5]",
         'content' => file_get_contents(__DIR__.'/articles/article06.txt'),
         'author' => $authors[$ids[5]-1]['full_name'],
-        'published_date' => "$dates[5]",
+        'published_date' => $dates[ $datesOrders[5] ]['date'],
         'like_counter' => rand(0,1000),
         'dislike_counter' => rand(0,1000),
         'author_image' => '/profiles' . "/$ids[5]" . '.jpg'
@@ -222,7 +281,7 @@ $articles = [
         'title' => "$titles[6]",
         'content' => file_get_contents(__DIR__.'/articles/article07.txt'),
         'author' => $authors[$ids[6]-1]['full_name'],
-        'published_date' => "$dates[6]",
+        'published_date' => $dates[ $datesOrders[6] ]['date'],
         'like_counter' => rand(0,1000),
         'dislike_counter' => rand(0,1000),
         'author_image' => '/profiles' . "/$ids[6]" . '.jpg'
@@ -231,7 +290,7 @@ $articles = [
         'title' => "$titles[7]",
         'content' => file_get_contents(__DIR__.'/articles/article08.txt'),
         'author' => $authors[$ids[7]-1]['full_name'],
-        'published_date' => "$dates[7]",
+        'published_date' => $dates[ $datesOrders[7] ]['date'],
         'like_counter' => rand(0,1000),
         'dislike_counter' => rand(0,1000),
         'author_image' => '/profiles' . "/$ids[7]" . '.jpg'
@@ -240,7 +299,7 @@ $articles = [
         'title' => "$titles[8]",
         'content' => file_get_contents(__DIR__.'/articles/article09.txt'),
         'author' => $authors[$ids[8]-1]['full_name'],
-        'published_date' => "$dates[8]",
+        'published_date' => $dates[ $datesOrders[8] ]['date'],
         'like_counter' => rand(0,1000),
         'dislike_counter' => rand(0,1000),
         'author_image' => '/profiles' . "/$ids[8]" . '.jpg'
@@ -249,7 +308,7 @@ $articles = [
         'title' => "$titles[9]",
         'content' => file_get_contents(__DIR__.'/articles/article10.txt'),
         'author' => $authors[$ids[9]-1]['full_name'],
-        'published_date' => "$dates[9]",
+        'published_date' => $dates[ $datesOrders[9] ]['date'],
         'like_counter' => rand(0,1000),
         'dislike_counter' => rand(0,1000),
         'author_image' => '/profiles' . "/$ids[9]" . '.jpg'

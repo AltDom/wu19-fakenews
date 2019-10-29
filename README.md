@@ -1,6 +1,6 @@
 # FakeNews
 
-<img src="http://gph.is/1rqkFj1" width="100%">
+<img src="https://media.giphy.com/media/3orieNLnAxzZI9CQzm/giphy.gif" width="100%">
 
 This is the first assignment I did which combines PHP, HTML and CSS. It is a news feed consisting of 10 fake articles. The news feed randomly assigns an author (name & picture), published date, and the number of likes & dislikes to each article with every reload of the browser. All of the possible authors (except one) are students who studied with me in the WebUtvecklare19 course at YRGO, Lindholmen.
 

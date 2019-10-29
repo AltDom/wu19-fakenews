@@ -14,7 +14,7 @@ declare(strict_types=1); ?>
 <body>
 <Header>
     <nav>
-        <h3>THE WU19 GAZETTE</h3>
+        <h2>THE WU19 GAZETTE</h2>
     </nav>
     <hr class = 'heading-rule'>
 </Header>

@@ -147,7 +147,7 @@ $titlesAndContent = [
     ],
     [
         'order' => 4,
-        'title' => 'YRGO\'s doors frozen shut. Student trapped inside whole winter. Notorious hacker emerges.',
+        'title' => 'Student trapped inside YRGO for the whole winter emerges as a notorious hacker.',
         'contentFile' => '/article04.txt'
     ],
     [
@@ -172,7 +172,7 @@ $titlesAndContent = [
     ],
     [
         'order' => 9,
-        'title' => 'Git commits too heavily to a pull and decides to compensate with a push.',
+        'title' => 'Git commits too heavily to pulling and decides to compensate a little with a push.',
         'contentFile' => '/article09.txt'
     ],
     [
@@ -200,6 +200,11 @@ $titlesAndContent = [
         'title' => 'WU19 Student\'s Fake News Feed found to be completely true.',
         'contentFile' => '/article14.txt'
     ],
+    [
+        'order' => 15,
+        'title' => 'Glue in "implode" function found to be not very sticky.',
+        'contentFile' => '/article15.txt'
+    ]
 ];
 $shuffledTAndC = shuffleArray($titlesAndContent);
 $TAndCSample = [$shuffledTAndC[0],$shuffledTAndC[1],$shuffledTAndC[2],$shuffledTAndC[3],$shuffledTAndC[4],$shuffledTAndC[5],$shuffledTAndC[6],$shuffledTAndC[7],$shuffledTAndC[8],$shuffledTAndC[9]];
@@ -208,15 +213,15 @@ $TAndCOrders = orderArray($TAndCSample);
 $dates = [
     [
         'order' => 0,
-        'date' => '1 November 2019'
-    ],
-    [
-        'order' => 1,
         'date' => 'The End of Time'
     ],
     [
-        'order' => 2,
+        'order' => 1,
         'date' => 'Snack-o-Clock'
+    ],
+    [
+        'order' => 2,
+        'date' => '25 December 2086'
     ],
     [
         'order' => 3,
@@ -224,69 +229,68 @@ $dates = [
     ],
     [
         'order' => 4,
-        'date' => '12 January 2019'
+        'date' => '1 November 2019'
     ],
     [
         'order' => 5,
-        'date' => '14 May 1987'
-    ],
-    [
-        'order' => 6,
-        'date' => '25 December 2086'
-    ],
-    [
-        'order' => 7,
-        'date' => 'During an Awkward Silence'
-    ],
-    [
-        'order' => 8,
-        'date' => '17 June 2018'
-    ],
-    [
-        'order' => 9,
-        'date' => '4 July 2019'
-    ],
-    [
-        'order' => 10,
-        'date' => '26 April 2014'
-    ],
-    [
-        'order' => 11,
         'date' => 'Yesterday'
     ],
     [
-        'order' => 12,
-        'date' => '500 AD'
-    ],
-    [
-        'order' => 13,
-        'date' => '300 BC'
-    ],
-    [
-        'order' => 14,
-        'date' => 'The Dawn of Man'
-    ],
-    [
-        'order' => 15,
-        'date' => 'In The Beginning'
-    ],
-    [
-        'order' => 16,
+        'order' => 6,
         'date' => 'Last Week'
     ],
     [
-        'order' => 17,
+        'order' => 7,
+        'date' => '4 July 2019'
+    ],
+    [
+        'order' => 8,
+        'date' => '12 January 2019'
+    ],
+    [
+        'order' => 9,
+        'date' => 'During an Awkward Silence'
+    ],
+    [
+        'order' => 10,
+        'date' => '17 June 2018'
+    ],
+    [
+        'order' => 11,
+        'date' => '26 April 2014'
+    ],
+    [
+        'order' => 12,
+        'date' => '29 February 2000'
+    ],
+    [
+        'order' => 13,
         'date' => '6 May 1990'
     ],
     [
+        'order' => 14,
+        'date' => '14 May 1987'
+    ],
+    [
+        'order' => 15,
+        'date' => '500 AD'
+    ],
+    [
+        'order' => 16,
+        'date' => '300 BC'
+    ],
+    [
+        'order' => 17,
+        'date' => 'The Dawn of Man'
+    ],
+    [
         'order' => 18,
-        'date' => '29 February 2000'
+        'date' => 'In The Beginning'
     ]
 ];
 $shuffledDates = shuffleArray($dates);
 $datesSample = [$shuffledDates[0],$shuffledDates[1],$shuffledDates[2],$shuffledDates[3],$shuffledDates[4],$shuffledDates[5],$shuffledDates[6],$shuffledDates[7],$shuffledDates[8],$shuffledDates[9]];
 $datesOrders = orderArray($datesSample);
-
 
 $articles = [
     [

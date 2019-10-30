@@ -15,7 +15,15 @@ function shuffleArray(array $arrayOfElements): array
     return $arrayOfElements;
 }
 
-function cmp($a, $b)
+/**
+ * Compares two integers $a & $b and prints -1 if $a < $b and 1 if $a >= $b.
+ *
+ * @param int $a
+ * @param int $b
+ *
+ * @return int
+ */
+function compare($a, $b)
 {
     if ($a == $b) {
         return 0;
@@ -23,9 +31,8 @@ function cmp($a, $b)
     return ($a < $b) ? -1 : 1;
 }
 
-
 /**
- * Takes the 'order' elements from an array and sorts them into an array called 'orders'.
+ * Takes the elements from an array with key 'order' and sorts them into an array called 'orders'.
  *
  * @param array $arrayOfElements
  *
@@ -36,6 +43,6 @@ function orderArray(array $arrayOfElements): array
     foreach ($arrayOfElements as $element) {
         $orders[] = $element['order'];
     }
-    usort($orders, "cmp");
+    usort($orders, "compare");
     return $orders;
 }

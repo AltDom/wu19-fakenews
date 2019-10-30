@@ -1,0 +1,1 @@
+Glue in "implode" function found to be not very sticky.

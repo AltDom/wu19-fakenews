@@ -32,7 +32,7 @@ function compare($a, $b)
 }
 
 /**
- * Takes the elements from an array with key 'order' and sorts them into an array called 'orders'.
+ * Takes the elements from an array with key 'order' and sorts them in ascending order an array called 'orders'.
  *
  * @param array $arrayOfElements
  *

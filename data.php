@@ -3,8 +3,10 @@
 declare(strict_types=1);
 require __DIR__.'/functions.php';
 
-$ids = range(1,29);
-$ids = shuffleArray($ids);
+// A shuffled array of the numbers from 1-29, representing Author IDs
+$ids = shuffleArray(range(1,29));
+
+// An array of arrays with each author's ID and name. Remember the IDs have been randomised above
 $authors = [
     [
         'id' => $ids[0],
@@ -124,91 +126,93 @@ $authors = [
     ]
 ];
 
+$articleID = shuffleArray(range(0,15));
+// An array of arrays with each author's ID and name. Remember the IDs have been randomised above
 $titlesAndContent = [
     [
-        'order' => 0,
-        'title' => '\'My legs stayed stretched forever after a "ben sträcka"!\'',
-        'contentFile' => '/article00.txt'
+        'order' => $articleID[0],
+        'title' => '/title' . "$articleID[0]" . '.txt',
+        'contentFile' => '/article' . "$articleID[0]" . '.txt'
     ],
     [
-        'order' => 1,
-        'title' => 'Scientists discover flugsvampar improve coding ability before killing.',
-        'contentFile' => '/article01.txt'
+        'order' => $articleID[1],
+        'title' => '/title' . "$articleID[1]" . '.txt',
+        'contentFile' => '/article' . "$articleID[1]" . '.txt'
     ],
     [
-        'order' => 2,
-        'title' => '\'It\'s likely that I\'ll be impeached for all the terrible things I\'ve done!\'',
-        'contentFile' => '/article02.txt'
+        'order' => $articleID[2],
+        'title' => '/title' . "$articleID[2]" . '.txt',
+        'contentFile' => '/article' . "$articleID[2]" . '.txt'
     ],
     [
-        'order' => 3,
-        'title' => 'Rund Pingis suspected to be the number one cause of confusion when coding loops.',
-        'contentFile' => '/article03.txt'
+        'order' => $articleID[3],
+        'title' => '/title' . "$articleID[3]" . '.txt',
+        'contentFile' => '/article' . "$articleID[3]" . '.txt'
     ],
     [
-        'order' => 4,
-        'title' => 'Student trapped inside YRGO for the whole winter emerges as a notorious hacker.',
-        'contentFile' => '/article04.txt'
+        'order' => $articleID[4],
+        'title' => '/title' . "$articleID[4]" . '.txt',
+        'contentFile' => '/article' . "$articleID[4]" . '.txt'
     ],
     [
-        'order' => 5,
-        'title' => 'Vincent spends 8 months of paternity leave admiring this student\'s beautiful code.',
-        'contentFile' => '/article05.txt'
+        'order' => $articleID[5],
+        'title' => '/title' . "$articleID[5]" . '.txt',
+        'contentFile' => '/article' . "$articleID[5]" . '.txt'
     ],
     [
-        'order' => 6,
-        'title' => 'The owner of Gulan found to be utterly obsessed with the centre of eggs.',
-        'contentFile' => '/article06.txt'
+        'order' => $articleID[6],
+        'title' => '/title' . "$articleID[6]" . '.txt',
+        'contentFile' => '/article' . "$articleID[6]" . '.txt'
     ],
     [
-        'order' => 7,
-        'title' => '\'Prepare to be nollade!\' said this student before being nollade.',
-        'contentFile' => '/article07.txt'
+        'order' => $articleID[7],
+        'title' => '/title' . "$articleID[7]" . '.txt',
+        'contentFile' => '/article' . "$articleID[7]" . '.txt'
     ],
     [
-        'order' => 8,
-        'title' => 'Cyber-criminal\'s pseudonym "The Stretched Leg" traced back to WU19 student\'s IP Address.',
-        'contentFile' => '/article08.txt'
+        'order' => $articleID[8],
+        'title' => '/title' . "$articleID[8]" . '.txt',
+        'contentFile' => '/article' . "$articleID[8]" . '.txt'
     ],
     [
-        'order' => 9,
-        'title' => 'Git commits too heavily to pulling and decides to compensate a little with a push.',
-        'contentFile' => '/article09.txt'
+        'order' => $articleID[9],
+        'title' => '/title' . "$articleID[9]" . '.txt',
+        'contentFile' => '/article' . "$articleID[9]" . '.txt'
     ],
     [
-        'order' => 10,
-        'title' => '"SQL Murder Mystery" characters Jeremy Bowers & Miranda Priestly identified as frequent Nordic Wellness visitors.',
-        'contentFile' => '/article10.txt'
+        'order' => $articleID[10],
+        'title' => '/title' . "$articleID[10]" . '.txt',
+        'contentFile' => '/article' . "$articleID[10]" . '.txt'
     ],
     [
-        'order' => 11,
-        'title' => '\'"Surely that Aussie guy has no idea what\'s going on", I thought to myself.\'',
-        'contentFile' => '/article11.txt'
+        'order' => $articleID[11],
+        'title' => '/title' . "$articleID[11]" . '.txt',
+        'contentFile' => '/article' . "$articleID[11]" . '.txt'
     ],
     [
-        'order' => 12,
-        'title' => 'Ping pong ball\'s trajectory discovered to bounce more vertically off the red side of the paddle.',
-        'contentFile' => '/article12.txt'
+        'order' => $articleID[12],
+        'title' => '/title' . "$articleID[12]" . '.txt',
+        'contentFile' => '/article' . "$articleID[12]" . '.txt'
     ],
     [
-        'order' => 13,
-        'title' => 'Streaming tears quickly turn to fury after WU19 student loses ping pong match.',
-        'contentFile' => '/article13.txt'
+        'order' => $articleID[13],
+        'title' => '/title' . "$articleID[13]" . '.txt',
+        'contentFile' => '/article' . "$articleID[13]" . '.txt'
     ],
     [
-        'order' => 14,
-        'title' => 'WU19 Student\'s Fake News Feed found to be completely true.',
-        'contentFile' => '/article14.txt'
+        'order' => $articleID[14],
+        'title' => '/title' . "$articleID[14]" . '.txt',
+        'contentFile' => '/article' . "$articleID[14]" . '.txt'
     ],
     [
-        'order' => 15,
-        'title' => 'Glue in "implode" function found to be not very sticky.',
-        'contentFile' => '/article15.txt'
+        'order' => $articleID[15],
+        'title' => '/title' . "$articleID[15]" . '.txt',
+        'contentFile' => '/article' . "$articleID[15]" . '.txt'
     ]
 ];
-$shuffledTAndC = shuffleArray($titlesAndContent);
-$TAndCSample = [$shuffledTAndC[0],$shuffledTAndC[1],$shuffledTAndC[2],$shuffledTAndC[3],$shuffledTAndC[4],$shuffledTAndC[5],$shuffledTAndC[6],$shuffledTAndC[7],$shuffledTAndC[8],$shuffledTAndC[9]];
-$TAndCOrders = orderArray($TAndCSample);
+// $shuffledTAndC = shuffleArray($titlesAndContent);
+// $TAndCSample = [$shuffledTAndC[0],$shuffledTAndC[1],$shuffledTAndC[2],$shuffledTAndC[3],$shuffledTAndC[4],$shuffledTAndC[5],$shuffledTAndC[6],$shuffledTAndC[7],$shuffledTAndC[8],$shuffledTAndC[9]];
+// $TAndCOrders = orderArray($TAndCSample);
 
 $dates = [
     [
@@ -292,10 +296,11 @@ $shuffledDates = shuffleArray($dates);
 $datesSample = [$shuffledDates[0],$shuffledDates[1],$shuffledDates[2],$shuffledDates[3],$shuffledDates[4],$shuffledDates[5],$shuffledDates[6],$shuffledDates[7],$shuffledDates[8],$shuffledDates[9]];
 $datesOrders = orderArray($datesSample);
 
+
 $articles = [
     [
-        'title' => $titlesAndContent[ $TAndCOrders[0] ]['title'],
-        'content' => file_get_contents(__DIR__ . '/articles' . $titlesAndContent[ $TAndCOrders[0] ]['contentFile']),
+        'title' => file_get_contents(__DIR__ . '/titles' . $titlesAndContent[ $articleID[0] ]['title']),
+        'content' => file_get_contents(__DIR__ . '/articles' . $titlesAndContent[ $articleID[0] ]['contentFile']),
         'author' => $authors[$ids[0]-1]['full_name'],
         'published_date' => $dates[ $datesOrders[0] ]['date'],
         'like_counter' => rand(0,1000),
@@ -303,8 +308,8 @@ $articles = [
         'author_image' => '/profiles' . "/$ids[0]" . '.jpg'
     ],
     [
-        'title' => $titlesAndContent[ $TAndCOrders[1] ]['title'],
-        'content' => file_get_contents(__DIR__.'/articles'.$titlesAndContent[ $TAndCOrders[1] ]['contentFile']),
+        'title' => file_get_contents(__DIR__ . '/titles' . $titlesAndContent[ $articleID[1] ]['title']),
+        'content' => file_get_contents(__DIR__ . '/articles' . $titlesAndContent[ $articleID[1] ]['contentFile']),
         'author' => $authors[$ids[1]-1]['full_name'],
         'published_date' => $dates[ $datesOrders[1] ]['date'],
         'like_counter' => rand(0,1000),
@@ -312,8 +317,8 @@ $articles = [
         'author_image' => '/profiles' . "/$ids[1]" . '.jpg'
     ],
     [
-        'title' => $titlesAndContent[ $TAndCOrders[2] ]['title'],
-        'content' => file_get_contents(__DIR__.'/articles'.$titlesAndContent[ $TAndCOrders[2] ]['contentFile']),
+        'title' => file_get_contents(__DIR__ . '/titles' . $titlesAndContent[ $articleID[2] ]['title']),
+        'content' => file_get_contents(__DIR__ . '/articles' . $titlesAndContent[ $articleID[2] ]['contentFile']),
         'author' => $authors[$ids[2]-1]['full_name'],
         'published_date' => $dates[ $datesOrders[2] ]['date'],
         'like_counter' => rand(0,1000),
@@ -321,8 +326,8 @@ $articles = [
         'author_image' => '/profiles' . "/$ids[2]" . '.jpg'
     ],
     [
-        'title' => $titlesAndContent[ $TAndCOrders[3] ]['title'],
-        'content' => file_get_contents(__DIR__.'/articles'.$titlesAndContent[ $TAndCOrders[3] ]['contentFile']),
+        'title' => file_get_contents(__DIR__ . '/titles' . $titlesAndContent[ $articleID[3] ]['title']),
+        'content' => file_get_contents(__DIR__ . '/articles' . $titlesAndContent[ $articleID[3] ]['contentFile']),
         'author' => $authors[$ids[3]-1]['full_name'],
         'published_date' => $dates[ $datesOrders[3] ]['date'],
         'like_counter' => rand(0,1000),
@@ -330,8 +335,8 @@ $articles = [
         'author_image' => '/profiles' . "/$ids[3]" . '.jpg'
     ],
     [
-        'title' => $titlesAndContent[ $TAndCOrders[4] ]['title'],
-        'content' => file_get_contents(__DIR__.'/articles'.$titlesAndContent[ $TAndCOrders[4] ]['contentFile']),
+        'title' => file_get_contents(__DIR__ . '/titles' . $titlesAndContent[ $articleID[4] ]['title']),
+        'content' => file_get_contents(__DIR__ . '/articles' . $titlesAndContent[ $articleID[4] ]['contentFile']),
         'author' => $authors[$ids[4]-1]['full_name'],
         'published_date' => $dates[ $datesOrders[4] ]['date'],
         'like_counter' => rand(0,1000),
@@ -339,8 +344,8 @@ $articles = [
         'author_image' => '/profiles' . "/$ids[4]" . '.jpg'
     ],
     [
-        'title' => $titlesAndContent[ $TAndCOrders[5] ]['title'],
-        'content' => file_get_contents(__DIR__.'/articles'.$titlesAndContent[ $TAndCOrders[5] ]['contentFile']),
+        'title' => file_get_contents(__DIR__ . '/titles' . $titlesAndContent[ $articleID[5] ]['title']),
+        'content' => file_get_contents(__DIR__ . '/articles' . $titlesAndContent[ $articleID[5] ]['contentFile']),
         'author' => $authors[$ids[5]-1]['full_name'],
         'published_date' => $dates[ $datesOrders[5] ]['date'],
         'like_counter' => rand(0,1000),
@@ -348,8 +353,8 @@ $articles = [
         'author_image' => '/profiles' . "/$ids[5]" . '.jpg'
     ],
     [
-        'title' => $titlesAndContent[ $TAndCOrders[6] ]['title'],
-        'content' => file_get_contents(__DIR__.'/articles'.$titlesAndContent[ $TAndCOrders[6] ]['contentFile']),
+        'title' => file_get_contents(__DIR__ . '/titles' . $titlesAndContent[ $articleID[6] ]['title']),
+        'content' => file_get_contents(__DIR__ . '/articles' . $titlesAndContent[ $articleID[6] ]['contentFile']),
         'author' => $authors[$ids[6]-1]['full_name'],
         'published_date' => $dates[ $datesOrders[6] ]['date'],
         'like_counter' => rand(0,1000),
@@ -357,8 +362,8 @@ $articles = [
         'author_image' => '/profiles' . "/$ids[6]" . '.jpg'
     ],
     [
-        'title' => $titlesAndContent[ $TAndCOrders[7] ]['title'],
-        'content' => file_get_contents(__DIR__.'/articles'.$titlesAndContent[ $TAndCOrders[7] ]['contentFile']),
+        'title' => file_get_contents(__DIR__ . '/titles' . $titlesAndContent[ $articleID[7] ]['title']),
+        'content' => file_get_contents(__DIR__ . '/articles' . $titlesAndContent[ $articleID[7] ]['contentFile']),
         'author' => $authors[$ids[7]-1]['full_name'],
         'published_date' => $dates[ $datesOrders[7] ]['date'],
         'like_counter' => rand(0,1000),
@@ -366,8 +371,8 @@ $articles = [
         'author_image' => '/profiles' . "/$ids[7]" . '.jpg'
     ],
     [
-        'title' => $titlesAndContent[ $TAndCOrders[8] ]['title'],
-        'content' => file_get_contents(__DIR__.'/articles'.$titlesAndContent[ $TAndCOrders[8] ]['contentFile']),
+        'title' => file_get_contents(__DIR__ . '/titles' . $titlesAndContent[ $articleID[8] ]['title']),
+        'content' => file_get_contents(__DIR__ . '/articles' . $titlesAndContent[ $articleID[8] ]['contentFile']),
         'author' => $authors[$ids[8]-1]['full_name'],
         'published_date' => $dates[ $datesOrders[8] ]['date'],
         'like_counter' => rand(0,1000),
@@ -375,8 +380,8 @@ $articles = [
         'author_image' => '/profiles' . "/$ids[8]" . '.jpg'
     ],
     [
-        'title' => $titlesAndContent[ $TAndCOrders[9] ]['title'],
-        'content' => file_get_contents(__DIR__.'/articles'.$titlesAndContent[ $TAndCOrders[9] ]['contentFile']),
+        'title' => file_get_contents(__DIR__ . '/titles' . $titlesAndContent[ $articleID[9] ]['title']),
+        'content' => file_get_contents(__DIR__ . '/articles' . $titlesAndContent[ $articleID[9] ]['contentFile']),
         'author' => $authors[$ids[9]-1]['full_name'],
         'published_date' => $dates[ $datesOrders[9] ]['date'],
         'like_counter' => rand(0,1000),

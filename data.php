@@ -5,8 +5,7 @@ require __DIR__.'/functions.php';
 
 // A shuffled array of the numbers from 1-29, representing Author IDs
 $ids = shuffleArray(range(1,29));
-
-// An array of arrays with each author's ID and name. Remember the IDs have been randomised above
+// An array of arrays with each author's ID and name. The IDs have been randomised above
 $authors = [
     [
         'id' => $ids[0],
@@ -126,8 +125,9 @@ $authors = [
     ]
 ];
 
+// A shuffled array of the numbers from 0-15, representing Article IDs
 $articleID = shuffleArray(range(0,15));
-// An array of arrays with each author's ID and name. Remember the IDs have been randomised above
+// An array of arrays with each article's ID, title and content. The Article IDs have been randomised above
 $titlesAndContent = [
     [
         'order' => $articleID[0],
@@ -210,9 +210,6 @@ $titlesAndContent = [
         'contentFile' => '/article' . "$articleID[15]" . '.txt'
     ]
 ];
-// $shuffledTAndC = shuffleArray($titlesAndContent);
-// $TAndCSample = [$shuffledTAndC[0],$shuffledTAndC[1],$shuffledTAndC[2],$shuffledTAndC[3],$shuffledTAndC[4],$shuffledTAndC[5],$shuffledTAndC[6],$shuffledTAndC[7],$shuffledTAndC[8],$shuffledTAndC[9]];
-// $TAndCOrders = orderArray($TAndCSample);
 
 $dates = [
     [

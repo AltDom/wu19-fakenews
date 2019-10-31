@@ -16,14 +16,14 @@ function shuffleArray(array $arrayOfElements): array
 }
 
 /**
-* Compares two integers $a & $b and prints -1 if $a < $b and 1 if $a >= $b.
+* Compares two integers $a & $b and prints -1 if $a < $b and 1 if $a >= $b. Used in the orderArray function below.
 *
 * @param int $a
 * @param int $b
 *
 * @return int
 */
-function compare($a, $b)
+function compareInts($a, $b)
 {
     if ($a == $b) {
         return 0;
@@ -43,6 +43,6 @@ function orderArray(array $arrayOfElements): array
     foreach ($arrayOfElements as $element) {
         $orders[] = $element['order'];
     }
-    usort($orders, "compare");
+    usort($orders, "compareInts");
     return $orders;
 }

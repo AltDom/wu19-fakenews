@@ -15,8 +15,8 @@ There are two versions of this project; `index.php` and `indexSQL.php`.
 
 ## Testers
 * Camilla Kylmänen Sjörén
-* Random person 1
-* Random person 2
+* Alexander Gustafsson Flink
+* Karl-Johan Lundholm
 
 
 ## License

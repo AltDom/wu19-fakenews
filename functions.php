@@ -3,12 +3,12 @@
 declare(strict_types=1);
 
 /**
- * Shuffles an array and returns it.
- *
- * @param array $arrayOfElements
- *
- * @return array
- */
+* Shuffles an array and returns it.
+*
+* @param array $arrayOfElements
+*
+* @return array
+*/
 function shuffleArray(array $arrayOfElements): array
 {
     shuffle($arrayOfElements);
@@ -16,13 +16,13 @@ function shuffleArray(array $arrayOfElements): array
 }
 
 /**
- * Compares two integers $a & $b and prints -1 if $a < $b and 1 if $a >= $b.
- *
- * @param int $a
- * @param int $b
- *
- * @return int
- */
+* Compares two integers $a & $b and prints -1 if $a < $b and 1 if $a >= $b.
+*
+* @param int $a
+* @param int $b
+*
+* @return int
+*/
 function compare($a, $b)
 {
     if ($a == $b) {
@@ -32,12 +32,12 @@ function compare($a, $b)
 }
 
 /**
- * Takes the elements from an array with key 'order' and sorts them in ascending order an array called 'orders'.
- *
- * @param array $arrayOfElements
- *
- * @return array
- */
+* Takes the elements from an array with key 'order' and sorts them in ascending order an array called 'orders'.
+*
+* @param array $arrayOfElements
+*
+* @return array
+*/
 function orderArray(array $arrayOfElements): array
 {
     foreach ($arrayOfElements as $element) {

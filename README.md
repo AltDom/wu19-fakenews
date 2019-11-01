@@ -10,14 +10,17 @@ There are two versions of this project; `index.php` and `indexSQL.php`.
 * `indexSQL.php` is an extra exercise as part of the assignment. It renders the same webpage as `index.php`, however the project data is read in from a SQLite database, and hence doesn't include the random features that were originally built into `index.php`. Enjoy!
 
 ## Download
-* Clone the repository by clicking [here](https://github.com/AltDom/wu19-fakenews) in GitHub Desktop or using `git clone https://github.com/AltDom/wu19-fakenews.git` in your chosen bash terminal.
-* Open `index.php` in your chosen browser.
+* Clone the repository using `git clone https://github.com/AltDom/wu19-fakenews.git` in your chosen bash terminal.
+* Enter the project folder using the command `cd project/`.
+* Run the project using the command `php index.php`.
+* Create a local server using the command `php -S localhost:8000`.
+* Open your browser of choice and go to the url `localhost:8000`.
+* Enjoy ...and remember to keep reloading the page!
 
 ## Testers
 * Camilla Kylmänen Sjörén
 * Alexander Gustafsson Flink
 * Karl-Johan Lundholm
-
 
 ## License
 This assignment is licensed under the MIT License. You can get all the details [here](https://github.com/AltDom/wu19-fakenews/blob/master/LICENSE). 

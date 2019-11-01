@@ -1,8 +1,6 @@
 <?php
 
-declare(strict_types=1);
-
-require __DIR__.'/data.php'; ?>
+declare(strict_types=1); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -20,6 +18,3 @@ require __DIR__.'/data.php'; ?>
         </nav>
         <hr class = 'heading-rule'>
     </Header>
-
-
-

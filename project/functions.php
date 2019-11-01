@@ -4,9 +4,7 @@ declare(strict_types=1);
 
 /**
 * Shuffles an array and returns it.
-*
 * @param array $arrayOfElements
-*
 * @return array
 */
 function shuffleArray(array $arrayOfElements): array
@@ -17,10 +15,8 @@ function shuffleArray(array $arrayOfElements): array
 
 /**
 * Compares two integers $a & $b and prints -1 if $a < $b and 1 if $a >= $b. Used in the orderArray function below.
-*
 * @param int $a
 * @param int $b
-*
 * @return int
 */
 function compareInts($a, $b)
@@ -33,9 +29,7 @@ function compareInts($a, $b)
 
 /**
 * Takes the elements from an array with key 'order' and sorts them in ascending order an array called 'orders'.
-*
 * @param array $arrayOfElements
-*
 * @return array
 */
 function orderArray(array $arrayOfElements): array

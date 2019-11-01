@@ -126,7 +126,7 @@ $authors = [
 ];
 
 // The articleIDs array is used to randomly select the titles and contents.
-$articleID = shuffleArray(range(0,15));
+$articleID = shuffleArray(range(0,17));
 // Titles and Content array. Each array element has extensions to title and content .txt files.
 $titlesAndContent = [
     [
@@ -192,6 +192,14 @@ $titlesAndContent = [
     [
         'title' => '/titles/15.txt',
         'contentFile' => '/articles/15.txt'
+    ],
+    [
+        'title' => '/titles/16.txt',
+        'contentFile' => '/articles/16.txt'
+    ],
+    [
+        'title' => '/titles/17.txt',
+        'contentFile' => '/articles/17.txt'
     ]
 ];
 

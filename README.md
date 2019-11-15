@@ -2,7 +2,7 @@
 
 <img src="https://media.giphy.com/media/3orieNLnAxzZI9CQzm/giphy.gif" width="100%">
 
-This is the first assignment I completed which combines PHP, HTML, CSS and SQLite. It is a news feed consisting of 10 fake news articles. 
+This is the first assignment I completed as part of the Web Developer course taught by Vincent Klaiber. It is a news feed consisting of 10 fake news articles. It was built combining front end languages HTML & CSS with back end languages PHP & SQLite.  
 
 ## About This Project
 There are two versions of this project; `index.php` and `indexSQL.php`.
